@@ -155,7 +155,7 @@ export const CardFront = ({ holding, forExport = false }: { holding: HoldingCard
                 <span style={{ marginLeft: "auto", marginRight: "4px" }}>ঃ</span>
               </span>
               <span style={{ fontSize: "16px", fontWeight: 700, color: VALUE_COLOR, flex: 1, whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis", letterSpacing: "-0.3px", ...BENGALI_TEXT_STYLE }}>
-                {holding.ward_no}
+                {holding.village}
               </span>
             </div>
 
@@ -166,7 +166,7 @@ export const CardFront = ({ holding, forExport = false }: { holding: HoldingCard
                 <span style={{ marginLeft: "auto", marginRight: "4px" }}>ঃ</span>
               </span>
               <span style={{ fontSize: "16px", fontWeight: 700, color: VALUE_COLOR, flex: 1, whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis", letterSpacing: "-0.3px", ...BENGALI_TEXT_STYLE }}>
-                {holding.village}
+                {holding.ward_no}
               </span>
             </div>
           </div>
@@ -178,8 +178,8 @@ export const CardFront = ({ holding, forExport = false }: { holding: HoldingCard
                 "১৩নং মন্দরী ইউনিয়ন পরিষদ",
                 `মালিক- ${holding.name}`,
                 `হোল্ডিং- ${holding.holding_no}`,
-                `ওয়ার্ড- ${holding.ward_no}`,
-                `এলাকা- ${holding.village}`,
+                `ওয়ার্ড- ${holding.village}`,
+                `এলাকা- ${holding.ward_no}`,
                 `ধার্য্যকৃত ট্যাক্সঃ ${holding.tax}/-`,
               ].join("\n")}
               size={88}
